@@ -4,7 +4,7 @@ from flask_cors import CORS
 app=Flask(__name__)
 CORS(app)
 
-@app.route('/data',methods=['POST'])
+@app.route('http://localhost:5000/data',methods=['POST'])
 def submit():
     data= request.json
     if not data:
